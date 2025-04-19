@@ -35,4 +35,15 @@ async function start() {
   await peerConnection.setLocalDescription(offer);
   console.log("Offer criada:", offer);
   // Enviar offer pro servidor via WebSocket aqui no futuro
+  const socket = new WebSocket("ws://localhost/confer");
+
+socket.onmessage = (event) => {
+  console.log("Mensagem recebida:", event.data);
+};
+
+socket.onopen = () => {
+  console.log("WebSocket conectado!");
+  socket.send(JSON.stringify({ type: "hello", msg: "sou um cliente!" }));
+};
+
 }
