@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Videoconferência</title>
-  <style>
-    video {
-      width: 45%;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-    #videos {
-      display: flex;
-      justify-content: center;
-    }
-    button {
-      margin: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBSIS - Soluções em Telemedicina</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Videoconferência (WebRTC)</h2>
-  <div id="videos">
-    <video id="localVideo" autoplay muted></video>
-    <video id="remoteVideo" autoplay></video>
-  </div>
-  <div style="text-align: center;">
-    <button onclick="start()">Iniciar</button>
-  </div>
 
-  <script src="script.js"></script>
+<header>
+    <h1>BBSIS</h1>
+    <div class="nav-links">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Soluções</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div>
+            <a href="login.html">Login</a> |
+            <a href="cadastro.html">Cadastro</a>
+        </div>
+    </div>
+</header>
+
+<div class="hero">
+    <p>Transforme o atendimento médico com a BBSIS</p>
+</div>
+
+<div class="content">
+    <h2>Nossas Soluções</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>Consultas Online</h3>
+            <p>Atendimentos à distância com qualidade.</p>
+        </div>
+        <div class="service-card">
+            <h3>Prontuário Eletrônico</h3>
+            <p>Histórico médico seguro e acessível.</p>
+        </div>
+        <div class="service-card">
+            <h3>Gestão de Clínicas</h3>
+            <p>Organização e eficiência para sua unidade.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 BBSIS. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
